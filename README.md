@@ -1,46 +1,41 @@
-# Getting Started with Create React App
+## Funcionalidades implementadas:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+(1) Build a User Registration Form and User Authentication
+Create a user registration form with fields for username, email, and password. Validate inputs and display appropriate error messages.
 
-## Available Scripts
+(2) Toggle A Modal
+Create a modal that opens when users click the contact button.
 
-In the project directory, you can run:
+(3) Toggle the style theme (Dark/Light)
+Create a switch button that toggles the style theme of the platform
 
-### `npm start`
+(5) Multi Screen Forms
+A form divided into multiple screens or steps, each representing a distinct set of inputs or information.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+(6) Todo List with Local Storage
+Build a to-do list that allows users to add, edit, and remove tasks. Persist the tasks using local storage.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+(7) Accordion Component
+Design an accordion component that allows users to expand and collapse sections to view content.
 
-### `npm test`
+(12) Infinite Scroll Gallery with Lazy Loading
+Build an image gallery that loads more images as the user scrolls down the page. Implement lazy loading for improved performance.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Deixei uma página com todos os links para as funcionalidades, está na página Home ('/') do projeto
 
-### `npm run build`
+## Decisões de design:
+Está tudo dentro da pasta **src/**. Nela contém:
+1. **assets/**: contém imagens.
+2. **shared/**: esta pasta contém componentes, estilizações e contextos que são utilizados por mais de um componente.
+3. **subdomains/**: nela contém cada pasta com o nome da sua funcionalidade. Dentro dela tem 3 pastas: 
+- **Containers**: engloba a funcionalidade e é ela que é exportada para Routes.tsx. 
+- **Interface**: representa a tela em si, ali é onde montei um resumo da aplicação.
+- **Components**: são basicamente os componentes que estão dentro da aplicação. Detalhe: os SVGs estão criados como componentes também. Além disso, essa pasta pode conter helpers, types, contextos, themes, entre outras funcionalidades exclusivas da feature.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Outras escolhas:
+1. ESLint e Prettier para padronizar o código e organizá-lo.
+2. Resolvi estilizar com Styled-Components. Usei também TypeScript porque é o que costumo usar normalmente.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Para rodar localmente:
+- **npm install**: para baixar as dependências do projeto.
+- **npm run dev**: para rodar em desenvolvimento.
